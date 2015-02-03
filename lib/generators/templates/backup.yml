@@ -1,0 +1,14 @@
+database: true
+
+folders:
+  -
+    path: 'log'
+    zip_name: 'log'
+  -
+    path: 'db/migrate'
+    zip_name: 'migrate'
+
+files:
+  -
+    path: 'db/schema.rb'
+    zip_name: 'schema'
