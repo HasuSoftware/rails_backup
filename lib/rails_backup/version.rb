@@ -1,3 +1,3 @@
 module RailsBackup
-  VERSION = '0.1.0'
+  VERSION = '0.1.5'
 end

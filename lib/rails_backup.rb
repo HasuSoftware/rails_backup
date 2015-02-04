@@ -78,7 +78,7 @@ module RailsBackup
       dbhost       = env_info['host']
       if dbadapter == 'mysql2'
         system "mysqldump -u #{dbuser} -h #{dbhost} -p#{dbpass} #{env_database} > #{backup_file}"
-        { name: "#{backup_description}.sql", path: "#{backup_file}.bz2" }
+        { name: "#{backup_description}.sql", path: "#{backup_file}" }
       else # TODO: add other database engines
         raise "The #{dbadapter} adapter is not supported by rails_backup gem yet!"
       end
